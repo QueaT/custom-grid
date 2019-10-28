@@ -155,22 +155,4 @@
     max-width: 1200px;
   }
 }
-
-picture {
-  display: block;
-  padding-bottom: 75%;
-  position: relative;
-}
-
-img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-ul {
-  padding: 2rem 0;
-}
 /*# sourceMappingURL=main.css.map */
