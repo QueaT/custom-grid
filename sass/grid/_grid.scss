@@ -1,0 +1,66 @@
+$columns: 12;
+
+.container {
+  margin: 0 auto;
+}
+.row {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+
+[class*="col-"] {
+  --row: 4;
+  --column: 12;
+  --gap: calc((var(--column) - var(--row)) * 0.23%);
+  --total-row: calc(var(--row) / var(--column) * 100%);
+  width: calc(var(--total-row) - var(--gap));
+  padding: 0.5rem;
+
+}
+
+@for $i from 1 through $columns {
+  .col-sm-#{$i} {
+    --row: #{$i};
+  }
+}
+
+@include mq('medium'){
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      --row: #{$i};
+    }
+  }
+  .container {
+    max-width: 710px;
+  }
+}
+
+@include mq('large'){
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      --row: #{$i};
+    }
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+picture {
+  display: block;
+  padding-bottom: 75%;
+  position: relative;
+}
+img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+ul{
+  padding: 2rem 0;
+}

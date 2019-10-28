@@ -1,0 +1,176 @@
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[class*="col-"] {
+  --row: 4;
+  --column: 12;
+  --gap: calc((var(--column) - var(--row)) * 0.23%);
+  --total-row: calc(var(--row) / var(--column) * 100%);
+  width: calc(var(--total-row) - var(--gap));
+  padding: 0.5rem;
+}
+
+.col-sm-1 {
+  --row: 1;
+}
+
+.col-sm-2 {
+  --row: 2;
+}
+
+.col-sm-3 {
+  --row: 3;
+}
+
+.col-sm-4 {
+  --row: 4;
+}
+
+.col-sm-5 {
+  --row: 5;
+}
+
+.col-sm-6 {
+  --row: 6;
+}
+
+.col-sm-7 {
+  --row: 7;
+}
+
+.col-sm-8 {
+  --row: 8;
+}
+
+.col-sm-9 {
+  --row: 9;
+}
+
+.col-sm-10 {
+  --row: 10;
+}
+
+.col-sm-11 {
+  --row: 11;
+}
+
+.col-sm-12 {
+  --row: 12;
+}
+
+@media screen and (min-width: 720px) {
+  .col-md-1 {
+    --row: 1;
+  }
+  .col-md-2 {
+    --row: 2;
+  }
+  .col-md-3 {
+    --row: 3;
+  }
+  .col-md-4 {
+    --row: 4;
+  }
+  .col-md-5 {
+    --row: 5;
+  }
+  .col-md-6 {
+    --row: 6;
+  }
+  .col-md-7 {
+    --row: 7;
+  }
+  .col-md-8 {
+    --row: 8;
+  }
+  .col-md-9 {
+    --row: 9;
+  }
+  .col-md-10 {
+    --row: 10;
+  }
+  .col-md-11 {
+    --row: 11;
+  }
+  .col-md-12 {
+    --row: 12;
+  }
+  .container {
+    max-width: 710px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .col-lg-1 {
+    --row: 1;
+  }
+  .col-lg-2 {
+    --row: 2;
+  }
+  .col-lg-3 {
+    --row: 3;
+  }
+  .col-lg-4 {
+    --row: 4;
+  }
+  .col-lg-5 {
+    --row: 5;
+  }
+  .col-lg-6 {
+    --row: 6;
+  }
+  .col-lg-7 {
+    --row: 7;
+  }
+  .col-lg-8 {
+    --row: 8;
+  }
+  .col-lg-9 {
+    --row: 9;
+  }
+  .col-lg-10 {
+    --row: 10;
+  }
+  .col-lg-11 {
+    --row: 11;
+  }
+  .col-lg-12 {
+    --row: 12;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+picture {
+  display: block;
+  padding-bottom: 75%;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+ul {
+  padding: 2rem 0;
+}
+/*# sourceMappingURL=main.css.map */
