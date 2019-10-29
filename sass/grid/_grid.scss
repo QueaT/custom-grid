@@ -9,15 +9,14 @@ $columns: 12;
   flex-wrap: wrap;
   margin: 1em 0;
   justify-content: space-between;
+  --row: 4;
 }
 
 [class*="col-"] {
-  --row: 4;
   --column: 12;
   --gap: calc((var(--column) - var(--row)) * 0.23%);
   --total-row: calc(var(--row) / var(--column) * 100%);
   width: calc(var(--total-row) - var(--gap));
-  padding: 0.5rem;
 
 }
 
